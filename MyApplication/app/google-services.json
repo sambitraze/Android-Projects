@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "651215545264",
+    "firebase_url": "https://find-professors.firebaseio.com",
+    "project_id": "find-professors",
+    "storage_bucket": "find-professors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651215545264:android:8166c77a147ca517646c75",
+        "android_client_info": {
+          "package_name": "com.decodebros.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651215545264-ngvfgkv7sa27fu6oipgo3i2eguo9hm1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.decodebros.myapplication",
+            "certificate_hash": "cd49ec883d853ca9e59ef797d26df80e4c600f9e"
+          }
+        },
+        {
+          "client_id": "651215545264-n889gh5pff44inmh4a7b7a9sp3irino0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcrZ50AZPXt0QBuHqH2duWrWu6cdFUtWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651215545264-n889gh5pff44inmh4a7b7a9sp3irino0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.example.hekk;
+package com.decodebros.proflocator;
 
 import android.os.Bundle;
 
