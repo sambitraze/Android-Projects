@@ -6,10 +6,10 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
         appBar: AppBar(
-          title: Text('Dicee'),
-          backgroundColor: Colors.red,
+          title: Center(child: Text('Dicee')),
+          backgroundColor: Colors.blue,
         ),
         body: DicePage(),
       ),
@@ -25,6 +25,12 @@ class DicePage extends StatefulWidget {
 class _DicePageState extends State<DicePage> {
   int ldn = 1; //lEFT-DICE-NUMBER
   int rdn = 1; //RIGHT-DICE-NUMBER
+  void cdf (){
+    setState(() {
+      ldn = Random().nextInt(6) + 1 ;
+      rdn = Random().nextInt(6) + 1 ;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -33,28 +39,16 @@ class _DicePageState extends State<DicePage> {
           Expanded(
             child: FlatButton(
               onPressed: (){
-                print('left button is pressed');
-                setState(() {
-                  ldn = Random().nextInt(6) + 1 ;
-                  rdn = Random().nextInt(6) + 1 ;
-                  print('ldn = $ldn');
-                  print('rdn = $rdn');
-                });
-              },
+                cdf();
+            },
               child: Image.asset('images/dice$ldn.png'),
             ),
           ),
           Expanded(
             child: FlatButton(
               onPressed: (){
-                print('Right button is pressed');
-                setState(() {
-                  ldn = Random().nextInt(6) + 1 ;
-                  rdn = Random().nextInt(6) + 1 ;
-                  print('rdn = $rdn');
-                  print('ldn = $ldn');
-                });
-              },
+                cdf();
+                },
               child: Image.asset('images/dice$rdn.png'),
             ),
           ),
