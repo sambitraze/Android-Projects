@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences("com.decodebros.myapplication", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
                 editor.clear();
-                editor.commit();
-                //finish();
+                editor.apply();
             }
         });
 
