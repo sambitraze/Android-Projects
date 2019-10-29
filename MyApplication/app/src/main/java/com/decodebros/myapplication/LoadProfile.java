@@ -3,7 +3,6 @@ package com.decodebros.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
-//import static android.content.Context.MODE_PRIVATE;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -11,8 +10,6 @@ import android.widget.TextView;
 public class LoadProfile extends AppCompatActivity {
 
     TextView dname,dyear, dcollege, dlocation, dbranch;
-    //SharedPreferences sharedPreferences ;
-    //SharedPreferences.Editor editor = sharedPreferences.edit();
     account acc = new account(this);
 
     @Override

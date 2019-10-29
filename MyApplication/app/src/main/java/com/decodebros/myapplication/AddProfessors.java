@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,7 +37,6 @@ public class AddProfessors extends AppCompatActivity {
         reference = database.getReference();
         final professors prof = new professors();
 
-
         add = findViewById(R.id.add);
         add.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -51,8 +49,6 @@ public class AddProfessors extends AppCompatActivity {
                 reference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        // This method is called once with the initial value and again
-                        // whenever data at this location is updated.
                         //String value = dataSnapshot.getValue(String.class);
                         //Log.d(TAG, "Value is: " + value);
                         //reference.child("prof02").setValue(prof);
@@ -60,12 +56,10 @@ public class AddProfessors extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        // Failed to read value
                         //Log.w(TAG, "Failed to read value.", error.toException());
                     }
                 });
             }
         });
-
     }
 }
