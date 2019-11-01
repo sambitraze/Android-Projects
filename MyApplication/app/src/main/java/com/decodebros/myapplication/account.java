@@ -7,7 +7,6 @@ import static android.content.Context.MODE_PRIVATE;
 public class account {
 
     String name, department, year, college, location;
-    //public static SharedPreferences sharedPreferences;
     private SharedPreferences mPreferences;
     private Context mContext;
     private String sharedPrefFile = "com.decodebros.myapplication";
@@ -17,7 +16,6 @@ public class account {
     }
 
     public void write () {
-
         mPreferences = mContext.getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
         SharedPreferences.Editor preferencesEditor = mPreferences.edit();
         preferencesEditor.putString("name", name);
@@ -26,8 +24,6 @@ public class account {
         preferencesEditor.putString("location", location);
         preferencesEditor.putString("year", year);
         preferencesEditor.putString("department", department);
-        //preferencesEditor.apply();
         preferencesEditor.commit();
-
     }
 }
