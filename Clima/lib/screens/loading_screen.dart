@@ -5,7 +5,9 @@ import 'package:clima/services/weather.dart';
 
 class LoadingScreen extends StatefulWidget {
   @override
-  _LoadingScreenState createState() => _LoadingScreenState();
+  State<StatefulWidget> createState() {
+    return _LoadingScreenState();
+  }
 }
 
 class _LoadingScreenState extends State<LoadingScreen> {
