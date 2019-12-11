@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "258458743367",
+    "firebase_url": "https://quick-chat-01.firebaseio.com",
+    "project_id": "quick-chat-01",
+    "storage_bucket": "quick-chat-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258458743367:android:fd253188917eb4a4ecb762",
+        "android_client_info": {
+          "package_name": "co.sambitraze.flash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258458743367-ilf9b3aa20er6cq73qmo5rh4sk5p3rj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGu3hAZCqoSaWBG3xyLfCq9Z7MZ1P6lmg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258458743367-ilf9b3aa20er6cq73qmo5rh4sk5p3rj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
